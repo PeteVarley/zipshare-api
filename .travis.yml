@@ -6,10 +6,9 @@ rvm:
   - 2.2
 env:
   - DB=postgresql
-script:
+script: rspec spec
   - bundle exec rake db:migrate
   - bundle exec rake db:test:prepare
-  - bundle exec rspec
 before_script:
   - bundle exec rake db:create RAILS_ENV=test
 
