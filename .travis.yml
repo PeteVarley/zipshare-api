@@ -6,7 +6,6 @@ rvm:
   - 2.2
 
 script: bundle exec rspec spec
- - travis-lint
 
 matrix:
   # fast_finish will prevent allowed failed process from delaying build

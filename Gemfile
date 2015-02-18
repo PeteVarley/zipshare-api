@@ -23,7 +23,8 @@ gem "email_validator", "~> 1.5.0"
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
   gem "byebug"
-
+  # Validate your .travis.yml
+  gem travis-lint
   # Purge data from database on every test run.
   gem "database_cleaner"
   # Use rspec rails for tests
