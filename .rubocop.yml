@@ -1,8 +1,8 @@
 AllCops:
   Exclude:
-    - '**.gemspec'
-    - 'bin/*'
-    - 'db/migrate/*'
+    - '.gemspec'
+    - 'bin/**/*'
+    - 'db/migrate/**/*'
     - 'db/schema.rb'
 
 Style/Documentation:
