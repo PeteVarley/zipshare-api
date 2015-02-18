@@ -146,6 +146,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
+    travis-lint (2.0.0)
+      json
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     web-console (2.0.0)
@@ -164,11 +166,12 @@ DEPENDENCIES
   database_cleaner
   email_validator (~> 1.5.0)
   jbuilder (~> 2.0)
-  pg
+  pg (= 0.18.1)
   rails (= 4.2.0)
   responders (~> 2.0)
   rspec-rails (~> 3.0)
   rubocop
   spring
+  travis-lint
   web-console (~> 2.0)
   yard (= 0.8.7.6)
