@@ -5,14 +5,13 @@ before_install: gem install bundler
 rvm:
   - 2.2
 env:
-#  - DB=sqlite
-#  - DB=mysql
   - DB=postgresql
-
+script:
+  - bundle exec rake db:migrate
+  - bundle exec rake db:test:prepare
+  - bundle exec rake spec
 before_script:
-  - psql -c 'create database zipshare-api_test' -U postgres
-
-script: bundle exec rspec spec
+  - bundle exec rake db:create RAILS_ENV=test
 
 
 matrix:
