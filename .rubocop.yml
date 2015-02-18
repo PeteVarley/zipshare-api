@@ -10,6 +10,7 @@ Style/Documentation:
     - 'app/controllers/*'
     - 'app/helpers/*'
     - 'config/application.rb'
+    - 'vendor/**/*'
 
 Style/LineEndConcatenation:
   Enabled: false
