@@ -4,13 +4,13 @@ AllCops:
     - 'bin/**/*'
     - 'db/migrate/**/*'
     - 'db/schema.rb'
+    - 'vendor/**/*'
 
 Style/Documentation:
   Exclude:
     - 'app/controllers/*'
     - 'app/helpers/*'
     - 'config/application.rb'
-    - 'vendor/**/*'
 
 Style/LineEndConcatenation:
   Enabled: false
